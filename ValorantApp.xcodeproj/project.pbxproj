@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCE3E07E2826CDFA000A2132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE3E07D2826CDFA000A2132 /* AppDelegate.swift */; };
-		DCE3E0802826CDFA000A2132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE3E07F2826CDFA000A2132 /* SceneDelegate.swift */; };
-		DCE3E0822826CDFA000A2132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE3E0812826CDFA000A2132 /* ViewController.swift */; };
-		DCE3E0852826CDFA000A2132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE3E0832826CDFA000A2132 /* Main.storyboard */; };
-		DCE3E0872826CDFD000A2132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE3E0862826CDFD000A2132 /* Assets.xcassets */; };
-		DCE3E08A2826CDFD000A2132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE3E0882826CDFD000A2132 /* LaunchScreen.storyboard */; };
-		DCE3E0922826CED2000A2132 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE3E0912826CED2000A2132 /* Character.swift */; };
+		DC562FBF2863D6EF00EE4B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC562FBE2863D6EF00EE4B99 /* AppDelegate.swift */; };
+		DC562FC12863D6EF00EE4B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC562FC02863D6EF00EE4B99 /* SceneDelegate.swift */; };
+		DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC562FC22863D6EF00EE4B99 /* ViewController.swift */; };
+		DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC42863D6EF00EE4B99 /* Main.storyboard */; };
+		DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC72863D6EF00EE4B99 /* Assets.xcassets */; };
+		DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */; };
+		DCF647662863D8D700121A4D /* mainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF647652863D8D700121A4D /* mainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DCE3E07A2826CDFA000A2132 /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCE3E07D2826CDFA000A2132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCE3E07F2826CDFA000A2132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCE3E0812826CDFA000A2132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCE3E0842826CDFA000A2132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCE3E0862826CDFD000A2132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DCE3E0892826CDFD000A2132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DCE3E08B2826CDFD000A2132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCE3E0912826CED2000A2132 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		DC562FBB2863D6EF00EE4B99 /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC562FBE2863D6EF00EE4B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC562FC02863D6EF00EE4B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC562FC22863D6EF00EE4B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC562FC52863D6EF00EE4B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC562FC72863D6EF00EE4B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC562FCA2863D6EF00EE4B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC562FCC2863D6EF00EE4B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF647652863D8D700121A4D /* mainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DCE3E0772826CDFA000A2132 /* Frameworks */ = {
+		DC562FB82863D6EF00EE4B99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,55 +39,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DCE3E0712826CDFA000A2132 = {
+		DC562FB22863D6EF00EE4B99 = {
 			isa = PBXGroup;
 			children = (
-				DCE3E07C2826CDFA000A2132 /* ValorantApp */,
-				DCE3E07B2826CDFA000A2132 /* Products */,
+				DC562FBD2863D6EF00EE4B99 /* ValorantApp */,
+				DC562FBC2863D6EF00EE4B99 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DCE3E07B2826CDFA000A2132 /* Products */ = {
+		DC562FBC2863D6EF00EE4B99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCE3E07A2826CDFA000A2132 /* ValorantApp.app */,
+				DC562FBB2863D6EF00EE4B99 /* ValorantApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DCE3E07C2826CDFA000A2132 /* ValorantApp */ = {
+		DC562FBD2863D6EF00EE4B99 /* ValorantApp */ = {
 			isa = PBXGroup;
 			children = (
-				DCE3E0932826CEF7000A2132 /* Services */,
-				DCE3E07D2826CDFA000A2132 /* AppDelegate.swift */,
-				DCE3E07F2826CDFA000A2132 /* SceneDelegate.swift */,
-				DCE3E0812826CDFA000A2132 /* ViewController.swift */,
-				DCE3E0832826CDFA000A2132 /* Main.storyboard */,
-				DCE3E0862826CDFD000A2132 /* Assets.xcassets */,
-				DCE3E0882826CDFD000A2132 /* LaunchScreen.storyboard */,
-				DCE3E08B2826CDFD000A2132 /* Info.plist */,
+				DC562FBE2863D6EF00EE4B99 /* AppDelegate.swift */,
+				DC562FC02863D6EF00EE4B99 /* SceneDelegate.swift */,
+				DC562FC22863D6EF00EE4B99 /* ViewController.swift */,
+				DC562FC42863D6EF00EE4B99 /* Main.storyboard */,
+				DC562FC72863D6EF00EE4B99 /* Assets.xcassets */,
+				DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */,
+				DC562FCC2863D6EF00EE4B99 /* Info.plist */,
+				DCF647652863D8D700121A4D /* mainTableViewCell.swift */,
 			);
 			path = ValorantApp;
-			sourceTree = "<group>";
-		};
-		DCE3E0932826CEF7000A2132 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				DCE3E0912826CED2000A2132 /* Character.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCE3E0792826CDFA000A2132 /* ValorantApp */ = {
+		DC562FBA2863D6EF00EE4B99 /* ValorantApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCE3E08E2826CDFD000A2132 /* Build configuration list for PBXNativeTarget "ValorantApp" */;
+			buildConfigurationList = DC562FCF2863D6EF00EE4B99 /* Build configuration list for PBXNativeTarget "ValorantApp" */;
 			buildPhases = (
-				DCE3E0762826CDFA000A2132 /* Sources */,
-				DCE3E0772826CDFA000A2132 /* Frameworks */,
-				DCE3E0782826CDFA000A2132 /* Resources */,
+				DC562FB72863D6EF00EE4B99 /* Sources */,
+				DC562FB82863D6EF00EE4B99 /* Frameworks */,
+				DC562FB92863D6EF00EE4B99 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -95,25 +87,25 @@
 			);
 			name = ValorantApp;
 			productName = ValorantApp;
-			productReference = DCE3E07A2826CDFA000A2132 /* ValorantApp.app */;
+			productReference = DC562FBB2863D6EF00EE4B99 /* ValorantApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DCE3E0722826CDFA000A2132 /* Project object */ = {
+		DC562FB32863D6EF00EE4B99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					DCE3E0792826CDFA000A2132 = {
-						CreatedOnToolsVersion = 13.3;
+					DC562FBA2863D6EF00EE4B99 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = DCE3E0752826CDFA000A2132 /* Build configuration list for PBXProject "ValorantApp" */;
+			buildConfigurationList = DC562FB62863D6EF00EE4B99 /* Build configuration list for PBXProject "ValorantApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = DCE3E0712826CDFA000A2132;
-			productRefGroup = DCE3E07B2826CDFA000A2132 /* Products */;
+			mainGroup = DC562FB22863D6EF00EE4B99;
+			productRefGroup = DC562FBC2863D6EF00EE4B99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCE3E0792826CDFA000A2132 /* ValorantApp */,
+				DC562FBA2863D6EF00EE4B99 /* ValorantApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DCE3E0782826CDFA000A2132 /* Resources */ = {
+		DC562FB92863D6EF00EE4B99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE3E08A2826CDFD000A2132 /* LaunchScreen.storyboard in Resources */,
-				DCE3E0872826CDFD000A2132 /* Assets.xcassets in Resources */,
-				DCE3E0852826CDFA000A2132 /* Main.storyboard in Resources */,
+				DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */,
+				DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */,
+				DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DCE3E0762826CDFA000A2132 /* Sources */ = {
+		DC562FB72863D6EF00EE4B99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE3E0822826CDFA000A2132 /* ViewController.swift in Sources */,
-				DCE3E07E2826CDFA000A2132 /* AppDelegate.swift in Sources */,
-				DCE3E0802826CDFA000A2132 /* SceneDelegate.swift in Sources */,
-				DCE3E0922826CED2000A2132 /* Character.swift in Sources */,
+				DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */,
+				DC562FBF2863D6EF00EE4B99 /* AppDelegate.swift in Sources */,
+				DCF647662863D8D700121A4D /* mainTableViewCell.swift in Sources */,
+				DC562FC12863D6EF00EE4B99 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DCE3E0832826CDFA000A2132 /* Main.storyboard */ = {
+		DC562FC42863D6EF00EE4B99 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCE3E0842826CDFA000A2132 /* Base */,
+				DC562FC52863D6EF00EE4B99 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DCE3E0882826CDFD000A2132 /* LaunchScreen.storyboard */ = {
+		DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCE3E0892826CDFD000A2132 /* Base */,
+				DC562FCA2863D6EF00EE4B99 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DCE3E08C2826CDFD000A2132 /* Debug */ = {
+		DC562FCD2863D6EF00EE4B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -238,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		DCE3E08D2826CDFD000A2132 /* Release */ = {
+		DC562FCE2863D6EF00EE4B99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,7 +284,7 @@
 			};
 			name = Release;
 		};
-		DCE3E08F2826CDFD000A2132 /* Debug */ = {
+		DC562FD02863D6EF00EE4B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		DCE3E0902826CDFD000A2132 /* Release */ = {
+		DC562FD12863D6EF00EE4B99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -351,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DCE3E0752826CDFA000A2132 /* Build configuration list for PBXProject "ValorantApp" */ = {
+		DC562FB62863D6EF00EE4B99 /* Build configuration list for PBXProject "ValorantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCE3E08C2826CDFD000A2132 /* Debug */,
-				DCE3E08D2826CDFD000A2132 /* Release */,
+				DC562FCD2863D6EF00EE4B99 /* Debug */,
+				DC562FCE2863D6EF00EE4B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCE3E08E2826CDFD000A2132 /* Build configuration list for PBXNativeTarget "ValorantApp" */ = {
+		DC562FCF2863D6EF00EE4B99 /* Build configuration list for PBXNativeTarget "ValorantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCE3E08F2826CDFD000A2132 /* Debug */,
-				DCE3E0902826CDFD000A2132 /* Release */,
+				DC562FD02863D6EF00EE4B99 /* Debug */,
+				DC562FD12863D6EF00EE4B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DCE3E0722826CDFA000A2132 /* Project object */;
+	rootObject = DC562FB32863D6EF00EE4B99 /* Project object */;
 }

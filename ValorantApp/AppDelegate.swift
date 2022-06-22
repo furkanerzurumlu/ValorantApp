@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ValorantApp
 //
-//  Created by Furkan Erzurumlu on 7.05.2022.
+//  Created by Furkan Erzurumlu on 23.06.2022.
 //
 
 import UIKit
