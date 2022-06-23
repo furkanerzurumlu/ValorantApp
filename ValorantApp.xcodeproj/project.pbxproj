@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC5608E128645B270066F3AA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5608E028645B270066F3AA /* CustomCell.xib */; };
+		DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608E728645E5A0066F3AA /* CustomCell.swift */; };
+		DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */; };
+		DC5608F0286462920066F3AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608EF286462920066F3AA /* Router.swift */; };
 		DC562FBF2863D6EF00EE4B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC562FBE2863D6EF00EE4B99 /* AppDelegate.swift */; };
 		DC562FC12863D6EF00EE4B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC562FC02863D6EF00EE4B99 /* SceneDelegate.swift */; };
 		DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC562FC22863D6EF00EE4B99 /* ViewController.swift */; };
 		DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC42863D6EF00EE4B99 /* Main.storyboard */; };
 		DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC72863D6EF00EE4B99 /* Assets.xcassets */; };
 		DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */; };
-		DCF647662863D8D700121A4D /* mainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF647652863D8D700121A4D /* mainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC5608E028645B270066F3AA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		DC5608E728645E5A0066F3AA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
+		DC5608EF286462920066F3AA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DC562FBB2863D6EF00EE4B99 /* ValorantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC562FBE2863D6EF00EE4B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC562FC02863D6EF00EE4B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +32,6 @@
 		DC562FC72863D6EF00EE4B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC562FCA2863D6EF00EE4B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC562FCC2863D6EF00EE4B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCF647652863D8D700121A4D /* mainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC5608E228645B580066F3AA /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC5608E028645B270066F3AA /* CustomCell.xib */,
+				DC5608E728645E5A0066F3AA /* CustomCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		DC5608E328645B660066F3AA /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DC5608E428645B740066F3AA /* Main */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DC5608E428645B740066F3AA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DC562FC22863D6EF00EE4B99 /* ViewController.swift */,
+				DC562FC42863D6EF00EE4B99 /* Main.storyboard */,
+				DC5608E228645B580066F3AA /* CustomCell */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DC5608E9286460440066F3AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC5608EC2864625A0066F3AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC5608ED286462600066F3AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DC5608EE286462680066F3AA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */,
+				DC562FC02863D6EF00EE4B99 /* SceneDelegate.swift */,
+				DC562FBE2863D6EF00EE4B99 /* AppDelegate.swift */,
+				DC562FC72863D6EF00EE4B99 /* Assets.xcassets */,
+				DC5608EF286462920066F3AA /* Router.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		DC562FB22863D6EF00EE4B99 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +125,12 @@
 		DC562FBD2863D6EF00EE4B99 /* ValorantApp */ = {
 			isa = PBXGroup;
 			children = (
-				DC562FBE2863D6EF00EE4B99 /* AppDelegate.swift */,
-				DC562FC02863D6EF00EE4B99 /* SceneDelegate.swift */,
-				DC562FC22863D6EF00EE4B99 /* ViewController.swift */,
-				DC562FC42863D6EF00EE4B99 /* Main.storyboard */,
-				DC562FC72863D6EF00EE4B99 /* Assets.xcassets */,
-				DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */,
+				DC5608ED286462600066F3AA /* Services */,
+				DC5608EC2864625A0066F3AA /* Model */,
+				DC5608E9286460440066F3AA /* Extensions */,
+				DC5608E328645B660066F3AA /* Screen */,
+				DC5608EE286462680066F3AA /* Other */,
 				DC562FCC2863D6EF00EE4B99 /* Info.plist */,
-				DCF647652863D8D700121A4D /* mainTableViewCell.swift */,
 			);
 			path = ValorantApp;
 			sourceTree = "<group>";
@@ -130,6 +195,7 @@
 			files = (
 				DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */,
 				DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */,
+				DC5608E128645B270066F3AA /* CustomCell.xib in Resources */,
 				DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +209,9 @@
 			files = (
 				DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */,
 				DC562FBF2863D6EF00EE4B99 /* AppDelegate.swift in Sources */,
-				DCF647662863D8D700121A4D /* mainTableViewCell.swift in Sources */,
+				DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */,
+				DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */,
+				DC5608F0286462920066F3AA /* Router.swift in Sources */,
 				DC562FC12863D6EF00EE4B99 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

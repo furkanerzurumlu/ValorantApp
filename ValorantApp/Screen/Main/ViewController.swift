@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mainTableView.register(CustomCell
+            .nibName, forCellReuseIdentifier: CustomCell.identifier)
+        
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
@@ -32,13 +35,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return statusName.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = mainTableView.dequeueReusableCell(withIdentifier: "mainTableViewCell") as! mainTableViewCell
+        let cell = mainTableView.dequeueReusableCell(withIdentifier: CustomCell.identifier, for: indexPath) as! CustomCell
         let labelName = statusName[indexPath.row]
         cell.statusNameLabel.text = labelName
         return cell
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
-    }
+    //func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+      //  return 120
+    //}
     
 }

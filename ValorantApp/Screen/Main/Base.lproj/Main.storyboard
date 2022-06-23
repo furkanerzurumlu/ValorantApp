@@ -69,7 +69,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="CDN-2p-pZg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LzB-HH-0dP"/>
                             <constraint firstItem="CDN-2p-pZg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MIc-Mf-JeV"/>
