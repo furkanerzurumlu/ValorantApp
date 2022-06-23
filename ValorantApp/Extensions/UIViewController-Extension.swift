@@ -9,8 +9,7 @@ import UIKit
 
 public enum StoryboardNames: String {
     case main = "Main"
-    
-    // Add storyboard name
+    case character = "CharacterVC"
    
     
    

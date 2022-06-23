@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var mainTableView: UITableView!
     
     let statusName = ["Agents","Weapons","Maps"]
@@ -25,9 +25,11 @@ class ViewController: UIViewController {
         mainTableView.allowsSelection = false
         mainTableView.separatorStyle = .none
     }
-
-
+    
+    
 }
+
+
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -40,8 +42,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.statusNameLabel.text = labelName
         return cell
     }
-    //func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      //  return 120
-    //}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let fetchData = statusName[indexPath.row]
+        Router.shared.showCharacteVC(navigationController: self.navigationController)
+        
+    }
     
 }
+//func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//  return 120
+//}
+
+

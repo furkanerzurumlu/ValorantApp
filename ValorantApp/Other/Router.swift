@@ -12,7 +12,10 @@ final class Router {
     
     static var shared: Router = Router()
     
-    
+    func showCharacteVC(navigationController: UINavigationController?){
+        let characterVC = CharacterVC.instantiate(storyboard: .character)
+        navigationController?.pushViewController(characterVC, animated: true)
+    }
     
     
 }
