@@ -12,10 +12,19 @@ final class Router {
     
     static var shared: Router = Router()
     
-    func showCharacteVC(navigationController: UINavigationController?){
+    func showCharacterVC(navigationController: UINavigationController?){
         let characterVC = CharacterVC.instantiate(storyboard: .character)
         navigationController?.pushViewController(characterVC, animated: true)
     }
     
+    func showWeaponsVC(navigationController: UINavigationController?){
+        let weaponsVC = WeaponsVC.instantiate(storyboard: .weapons)
+        navigationController?.pushViewController(weaponsVC, animated: true)
+    }
+    
+    func showMapsVC(navigationController: UINavigationController?){
+        let mapsVC = MapsVC.instantiate(storyboard: .maps)
+        navigationController?.pushViewController(mapsVC, animated: true)
+    }
     
 }

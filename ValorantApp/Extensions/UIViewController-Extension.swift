@@ -10,9 +10,10 @@ import UIKit
 public enum StoryboardNames: String {
     case main = "Main"
     case character = "CharacterVC"
-   
+    case weapons = "WeaponsVC"
+    case maps = "MapsVC"
     
-   
+    
 }
 
 protocol StoryboardSettings {

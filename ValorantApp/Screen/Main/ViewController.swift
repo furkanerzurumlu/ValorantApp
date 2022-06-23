@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
-        mainTableView.allowsSelection = false
         mainTableView.separatorStyle = .none
     }
     
@@ -43,9 +42,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let fetchData = statusName[indexPath.row]
-        Router.shared.showCharacteVC(navigationController: self.navigationController)
-        
+        //let fetchData = statusName[indexPath.row]
+        if indexPath.row == 0 {
+            Router.shared.showCharacterVC(navigationController: self.navigationController)
+        }
+        else if indexPath.row == 1 {
+            Router.shared.showWeaponsVC(navigationController: self.navigationController)
+        }
+        else {
+            Router.shared.showMapsVC(navigationController: self.navigationController)
+        }
     }
     
 }

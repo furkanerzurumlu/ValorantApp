@@ -17,6 +17,14 @@
 		DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC42863D6EF00EE4B99 /* Main.storyboard */; };
 		DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC72863D6EF00EE4B99 /* Assets.xcassets */; };
 		DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */; };
+		DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */; };
+		DC71D3A02865043300E5E234 /* WeaponsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D39F2865043300E5E234 /* WeaponsVC.swift */; };
+		DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A12865045C00E5E234 /* WeaponsVM.swift */; };
+		DC71D3A42865047300E5E234 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A32865047300E5E234 /* MainVM.swift */; };
+		DC71D3A7286504AB00E5E234 /* MapsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC71D3A6286504AB00E5E234 /* MapsVC.storyboard */; };
+		DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A8286504C200E5E234 /* MapsVC.swift */; };
+		DC71D3AB286504CD00E5E234 /* MapsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3AA286504CD00E5E234 /* MapsVM.swift */; };
+		DC71D3AD2865105D00E5E234 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3AC2865105D00E5E234 /* Character.swift */; };
 		DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBC274428649A320000E699 /* CharacterVC.storyboard */; };
 		DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC274628649A4B0000E699 /* CharacterVC.swift */; };
 		DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC27482864BF220000E699 /* CharacterVM.swift */; };
@@ -35,6 +43,14 @@
 		DC562FC72863D6EF00EE4B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC562FCA2863D6EF00EE4B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC562FCC2863D6EF00EE4B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeaponsVC.storyboard; sourceTree = "<group>"; };
+		DC71D39F2865043300E5E234 /* WeaponsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVC.swift; sourceTree = "<group>"; };
+		DC71D3A12865045C00E5E234 /* WeaponsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVM.swift; sourceTree = "<group>"; };
+		DC71D3A32865047300E5E234 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		DC71D3A6286504AB00E5E234 /* MapsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapsVC.storyboard; sourceTree = "<group>"; };
+		DC71D3A8286504C200E5E234 /* MapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = "<group>"; };
+		DC71D3AA286504CD00E5E234 /* MapsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVM.swift; sourceTree = "<group>"; };
+		DC71D3AC2865105D00E5E234 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		DCBC274428649A320000E699 /* CharacterVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterVC.storyboard; sourceTree = "<group>"; };
 		DCBC274628649A4B0000E699 /* CharacterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVC.swift; sourceTree = "<group>"; };
 		DCBC27482864BF220000E699 /* CharacterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVM.swift; sourceTree = "<group>"; };
@@ -63,8 +79,10 @@
 		DC5608E328645B660066F3AA /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				DCBC274328649A150000E699 /* CharacterVC */,
 				DC5608E428645B740066F3AA /* Main */,
+				DCBC274328649A150000E699 /* CharacterVC */,
+				DC71D3A52865048200E5E234 /* MapsVC */,
+				DC71D39A286503E100E5E234 /* WeaponsVC */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -75,6 +93,7 @@
 				DC5608E228645B580066F3AA /* CustomCell */,
 				DC562FC22863D6EF00EE4B99 /* ViewController.swift */,
 				DC562FC42863D6EF00EE4B99 /* Main.storyboard */,
+				DC71D3A32865047300E5E234 /* MainVM.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -90,6 +109,7 @@
 		DC5608EC2864625A0066F3AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC71D3AC2865105D00E5E234 /* Character.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +160,26 @@
 				DC562FCC2863D6EF00EE4B99 /* Info.plist */,
 			);
 			path = ValorantApp;
+			sourceTree = "<group>";
+		};
+		DC71D39A286503E100E5E234 /* WeaponsVC */ = {
+			isa = PBXGroup;
+			children = (
+				DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */,
+				DC71D39F2865043300E5E234 /* WeaponsVC.swift */,
+				DC71D3A12865045C00E5E234 /* WeaponsVM.swift */,
+			);
+			path = WeaponsVC;
+			sourceTree = "<group>";
+		};
+		DC71D3A52865048200E5E234 /* MapsVC */ = {
+			isa = PBXGroup;
+			children = (
+				DC71D3A6286504AB00E5E234 /* MapsVC.storyboard */,
+				DC71D3A8286504C200E5E234 /* MapsVC.swift */,
+				DC71D3AA286504CD00E5E234 /* MapsVM.swift */,
+			);
+			path = MapsVC;
 			sourceTree = "<group>";
 		};
 		DCBC274328649A150000E699 /* CharacterVC */ = {
@@ -210,8 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC71D3A7286504AB00E5E234 /* MapsVC.storyboard in Resources */,
 				DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */,
 				DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */,
+				DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */,
 				DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */,
 				DC5608E128645B270066F3AA /* CustomCell.xib in Resources */,
 				DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */,
@@ -226,12 +268,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */,
+				DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */,
+				DC71D3A02865043300E5E234 /* WeaponsVC.swift in Sources */,
 				DC562FBF2863D6EF00EE4B99 /* AppDelegate.swift in Sources */,
 				DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */,
+				DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */,
 				DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */,
 				DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */,
+				DC71D3A42865047300E5E234 /* MainVM.swift in Sources */,
+				DC71D3AD2865105D00E5E234 /* Character.swift in Sources */,
 				DC5608F0286462920066F3AA /* Router.swift in Sources */,
 				DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */,
+				DC71D3AB286504CD00E5E234 /* MapsVM.swift in Sources */,
 				DC562FC12863D6EF00EE4B99 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
