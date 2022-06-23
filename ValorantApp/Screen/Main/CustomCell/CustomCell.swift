@@ -8,7 +8,6 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
-    @IBOutlet weak var Viesss: UIView!
     
     @IBOutlet weak var statusImageView: UIImageView!
     @IBOutlet weak var statusNameLabel: UILabel!
@@ -18,14 +17,10 @@ class CustomCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-       
-            self.topView.layer.cornerRadius = 5
-
-        
-        
+        self.topView.layer.cornerRadius = 5
         
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

@@ -29,6 +29,7 @@
 		DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBC274428649A320000E699 /* CharacterVC.storyboard */; };
 		DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC274628649A4B0000E699 /* CharacterVC.swift */; };
 		DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC27482864BF220000E699 /* CharacterVM.swift */; };
+		DCEAF3862865127700EEBCC0 /* characterNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF3852865127700EEBCC0 /* characterNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		DCBC274428649A320000E699 /* CharacterVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterVC.storyboard; sourceTree = "<group>"; };
 		DCBC274628649A4B0000E699 /* CharacterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVC.swift; sourceTree = "<group>"; };
 		DCBC27482864BF220000E699 /* CharacterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVM.swift; sourceTree = "<group>"; };
+		DCEAF3852865127700EEBCC0 /* characterNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		DC5608ED286462600066F3AA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DCEAF3852865127700EEBCC0 /* characterNetworking.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */,
 				DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */,
 				DC71D3A02865043300E5E234 /* WeaponsVC.swift in Sources */,
+				DCEAF3862865127700EEBCC0 /* characterNetworking.swift in Sources */,
 				DC562FBF2863D6EF00EE4B99 /* AppDelegate.swift in Sources */,
 				DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */,
 				DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */,

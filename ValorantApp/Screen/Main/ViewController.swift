@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     let statusName = ["Agents","Weapons","Maps"]
+    let imageName = ["character","weapons","map" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = mainTableView.dequeueReusableCell(withIdentifier: CustomCell.identifier, for: indexPath) as! CustomCell
         let labelName = statusName[indexPath.row]
+        let labelImage = imageName[indexPath.row]
         cell.statusNameLabel.text = labelName
+        cell.statusImageView.image = UIImage(named: labelImage)
+    
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
