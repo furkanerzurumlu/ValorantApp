@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Valorant-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ValorantApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,7 +77,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CDN-2p-pZg" secondAttribute="bottom" id="vGP-dK-pch"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Valorant" id="tCz-Du-1dY"/>
+                    <navigationItem key="navigationItem" id="tCz-Du-1dY"/>
                     <connections>
                         <outlet property="mainTableView" destination="CDN-2p-pZg" id="398-ZQ-gQg"/>
                     </connections>
@@ -91,8 +91,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kra-BV-MNU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bLf-7a-kl0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bLf-7a-kl0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
