@@ -9,29 +9,38 @@ import UIKit
 
 class CharacterVC: UIViewController {
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var characterCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        characterCollectionView.delegate = self
+        characterCollectionView.dataSource = self
+        
+        
+        let nibCell = UINib(nibName: "CharacterCollectionViewCell", bundle: nil)
+        characterCollectionView.register(nibCell, forCellWithReuseIdentifier: "characterCell")
+        
+        
+        
+        
     }
-    
-    
     
 }
 
-extension CharacterVC: UICollectionViewDelegate, UICollectionViewDataSource {
+
+extension CharacterVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharacterCollectionViewCell", for: indexPath) as! CharacterCollectionViewCell
+        let cell = characterCollectionView.dequeueReusableCell(withReuseIdentifier: "characterCell", for: indexPath) as! CharacterCollectionViewCell
         return cell
     }
     
-    
 }
+
+

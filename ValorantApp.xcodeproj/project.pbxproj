@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC3445A32866463F0005C46F /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3445A12866463F0005C46F /* CharacterCollectionViewCell.swift */; };
-		DC3445A42866463F0005C46F /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3445A22866463F0005C46F /* CharacterCollectionViewCell.xib */; };
 		DC5608E128645B270066F3AA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5608E028645B270066F3AA /* CustomCell.xib */; };
 		DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608E728645E5A0066F3AA /* CustomCell.swift */; };
 		DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */; };
@@ -31,12 +29,12 @@
 		DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBC274428649A320000E699 /* CharacterVC.storyboard */; };
 		DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC274628649A4B0000E699 /* CharacterVC.swift */; };
 		DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC27482864BF220000E699 /* CharacterVM.swift */; };
+		DCBF9D542869EF1600D124F4 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF9D522869EF1600D124F4 /* CharacterCollectionViewCell.swift */; };
+		DCBF9D552869EF1600D124F4 /* CharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCBF9D532869EF1600D124F4 /* CharacterCollectionViewCell.xib */; };
 		DCEAF3862865127700EEBCC0 /* characterNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEAF3852865127700EEBCC0 /* characterNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC3445A12866463F0005C46F /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
-		DC3445A22866463F0005C46F /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
 		DC5608E028645B270066F3AA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		DC5608E728645E5A0066F3AA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
@@ -60,6 +58,8 @@
 		DCBC274428649A320000E699 /* CharacterVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterVC.storyboard; sourceTree = "<group>"; };
 		DCBC274628649A4B0000E699 /* CharacterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVC.swift; sourceTree = "<group>"; };
 		DCBC27482864BF220000E699 /* CharacterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVM.swift; sourceTree = "<group>"; };
+		DCBF9D522869EF1600D124F4 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		DCBF9D532869EF1600D124F4 /* CharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCollectionViewCell.xib; sourceTree = "<group>"; };
 		DCEAF3852865127700EEBCC0 /* characterNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +78,8 @@
 		DC3445A5286646440005C46F /* CharacteCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				DC3445A12866463F0005C46F /* CharacterCollectionViewCell.swift */,
-				DC3445A22866463F0005C46F /* CharacterCollectionViewCell.xib */,
+				DCBF9D522869EF1600D124F4 /* CharacterCollectionViewCell.swift */,
+				DCBF9D532869EF1600D124F4 /* CharacterCollectionViewCell.xib */,
 			);
 			path = CharacteCollectionView;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */,
 				DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */,
 				DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */,
-				DC3445A42866463F0005C46F /* CharacterCollectionViewCell.xib in Resources */,
+				DCBF9D552869EF1600D124F4 /* CharacterCollectionViewCell.xib in Resources */,
 				DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */,
 				DC5608E128645B270066F3AA /* CustomCell.xib in Resources */,
 				DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */,
@@ -293,7 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3445A32866463F0005C46F /* CharacterCollectionViewCell.swift in Sources */,
+				DCBF9D542869EF1600D124F4 /* CharacterCollectionViewCell.swift in Sources */,
 				DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */,
 				DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */,
 				DC71D3A02865043300E5E234 /* WeaponsVC.swift in Sources */,
