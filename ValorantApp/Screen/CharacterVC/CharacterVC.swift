@@ -22,9 +22,6 @@ class CharacterVC: UIViewController {
         let nibCell = UINib(nibName: "CharacterCollectionViewCell", bundle: nil)
         characterCollectionView.register(nibCell, forCellWithReuseIdentifier: "characterCell")
         
-        
-        
-        
     }
     
 }
