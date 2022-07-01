@@ -20,7 +20,6 @@
 		DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */; };
 		DC71D3A02865043300E5E234 /* WeaponsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D39F2865043300E5E234 /* WeaponsVC.swift */; };
 		DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A12865045C00E5E234 /* WeaponsVM.swift */; };
-		DC71D3A42865047300E5E234 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A32865047300E5E234 /* MainVM.swift */; };
 		DC71D3A7286504AB00E5E234 /* MapsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC71D3A6286504AB00E5E234 /* MapsVC.storyboard */; };
 		DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A8286504C200E5E234 /* MapsVC.swift */; };
 		DC71D3AB286504CD00E5E234 /* MapsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3AA286504CD00E5E234 /* MapsVM.swift */; };
@@ -50,7 +49,6 @@
 		DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeaponsVC.storyboard; sourceTree = "<group>"; };
 		DC71D39F2865043300E5E234 /* WeaponsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVC.swift; sourceTree = "<group>"; };
 		DC71D3A12865045C00E5E234 /* WeaponsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVM.swift; sourceTree = "<group>"; };
-		DC71D3A32865047300E5E234 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 		DC71D3A6286504AB00E5E234 /* MapsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapsVC.storyboard; sourceTree = "<group>"; };
 		DC71D3A8286504C200E5E234 /* MapsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = "<group>"; };
 		DC71D3AA286504CD00E5E234 /* MapsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsVM.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				DC5608E228645B580066F3AA /* CustomCell */,
 				DC562FC22863D6EF00EE4B99 /* ViewController.swift */,
 				DC562FC42863D6EF00EE4B99 /* Main.storyboard */,
-				DC71D3A32865047300E5E234 /* MainVM.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -303,7 +300,6 @@
 				DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */,
 				DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */,
 				DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */,
-				DC71D3A42865047300E5E234 /* MainVM.swift in Sources */,
 				DC71D3AD2865105D00E5E234 /* Character.swift in Sources */,
 				DC5608F0286462920066F3AA /* Router.swift in Sources */,
 				DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */,
