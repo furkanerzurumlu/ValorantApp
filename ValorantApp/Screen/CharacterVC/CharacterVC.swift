@@ -12,9 +12,12 @@ class CharacterVC: UIViewController {
     
     @IBOutlet weak var characterCollectionView: UICollectionView!
     
+    var viewModel: CharacterVM?
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewModel?.delegate = self
+        viewModel?.getUpcomingData()
         characterCollectionView.delegate = self
         characterCollectionView.dataSource = self
         
@@ -30,14 +33,20 @@ class CharacterVC: UIViewController {
 extension CharacterVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return viewModel?.data.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = characterCollectionView.dequeueReusableCell(withReuseIdentifier: "characterCell", for: indexPath) as! CharacterCollectionViewCell
+        cell.characterNameLabel.text = viewModel?.data[indexPath.row].developerName
         return cell
     }
     
 }
 
+extension CharacterVC: CharacterVMDelegateOutputs {
+    func reloadCollectionView() {
+        self.characterCollectionView.reloadData()
+    }
+}
 

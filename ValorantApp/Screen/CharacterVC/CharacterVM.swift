@@ -12,7 +12,8 @@ protocol CharacterVMProtocol: AnyObject{
 }
 
 protocol CharacterVMDelegate: CharacterVMProtocol{
-    var Data: [Datum] {get set}
+    var delegate: CharacterVMDelegateOutputs? {get set}
+    var data: [Datum] {get set}
     func getUpcomingData()
 }
 
@@ -20,20 +21,19 @@ protocol CharacterVMDelegateOutputs: AnyObject{
     func reloadCollectionView()
 }
 
-
-
 class CharacterVM: CharacterVMDelegate {
-    var Data: [Datum] = []
+    
+    var data: [Datum] = []
     var delegate: CharacterVMDelegateOutputs?
     var network: charecterNetworking = charecterNetworking()
     
     func getUpcomingData() {
         network.getUpComingCharacter{ [weak self] (response) in
-            guard let response = response, let self = self else {
-                return
+            if let response = response {
+                self?.data = response.data
+                self?.delegate?.reloadCollectionView()
+
             }
-            self.Data = response.data
-            self.delegate?.reloadCollectionView()
         }
     }
 }

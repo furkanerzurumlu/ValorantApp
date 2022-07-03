@@ -14,6 +14,8 @@ final class Router {
     
     func showCharacterVC(navigationController: UINavigationController?){
         let characterVC = CharacterVC.instantiate(storyboard: .character)
+        let characterVM = CharacterVM()
+        characterVC.viewModel = characterVM
         navigationController?.pushViewController(characterVC, animated: true)
     }
     
