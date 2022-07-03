@@ -12,10 +12,11 @@ class CharacterCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var characterNameLabel: UILabel!
     
+    @IBOutlet weak var stackView: UIStackView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
+        stackView.layer.cornerRadius = 16
+        stackView.clipsToBounds = true
     }
 
 }

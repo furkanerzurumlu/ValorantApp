@@ -42,6 +42,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let labelImage = imageName[indexPath.row]
         cell.statusNameLabel.text = labelName
         cell.statusImageView.image = UIImage(named: labelImage)
+        cell.imageView?.backgroundColor = UIColor(red: 214, green: 70, blue: 76, alpha: 1)
     
         return cell
     }

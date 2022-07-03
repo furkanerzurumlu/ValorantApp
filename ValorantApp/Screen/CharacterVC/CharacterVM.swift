@@ -12,20 +12,18 @@ protocol CharacterVMProtocol: AnyObject{
 }
 
 protocol CharacterVMDelegate: CharacterVMProtocol{
+    var Data: [Datum] {get set}
     func getUpcomingData()
 }
 
 protocol CharacterVMDelegateOutputs: AnyObject{
-    
+    func reloadCollectionView()
 }
 
-enum CharacterVMOutputs {
-    //case succes()
-    case error(String)
-}
+
 
 class CharacterVM: CharacterVMDelegate {
-    
+    var Data: [Datum] = []
     var delegate: CharacterVMDelegateOutputs?
     var network: charecterNetworking = charecterNetworking()
     
@@ -34,6 +32,8 @@ class CharacterVM: CharacterVMDelegate {
             guard let response = response, let self = self else {
                 return
             }
+            self.Data = response.data
+            self.delegate?.reloadCollectionView()
         }
     }
 }
