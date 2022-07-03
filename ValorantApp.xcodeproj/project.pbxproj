@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3F1CB32871F78500CDF2EC /* CharacterDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3F1CB22871F78500CDF2EC /* CharacterDetailVC.storyboard */; };
+		DC3F1CB72871F7FD00CDF2EC /* CharacterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F1CB62871F7FD00CDF2EC /* CharacterDetailVC.swift */; };
+		DC3F1CB92871FA6900CDF2EC /* CharacterDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */; };
 		DC5608E128645B270066F3AA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5608E028645B270066F3AA /* CustomCell.xib */; };
 		DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608E728645E5A0066F3AA /* CustomCell.swift */; };
 		DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC3F1CB22871F78500CDF2EC /* CharacterDetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetailVC.storyboard; sourceTree = "<group>"; };
+		DC3F1CB62871F7FD00CDF2EC /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVC.swift; sourceTree = "<group>"; };
+		DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVM.swift; sourceTree = "<group>"; };
 		DC5608E028645B270066F3AA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		DC5608E728645E5A0066F3AA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
@@ -80,6 +86,16 @@
 				DCBF9D532869EF1600D124F4 /* CharacterCollectionViewCell.xib */,
 			);
 			path = CharacteCollectionView;
+			sourceTree = "<group>";
+		};
+		DC3F1CB12871F74100CDF2EC /* CharacterDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				DC3F1CB22871F78500CDF2EC /* CharacterDetailVC.storyboard */,
+				DC3F1CB62871F7FD00CDF2EC /* CharacterDetailVC.swift */,
+				DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */,
+			);
+			path = CharacterDetailView;
 			sourceTree = "<group>";
 		};
 		DC5608E228645B580066F3AA /* CustomCell */ = {
@@ -201,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				DC3445A5286646440005C46F /* CharacteCollectionView */,
+				DC3F1CB12871F74100CDF2EC /* CharacterDetailView */,
 				DCBC274428649A320000E699 /* CharacterVC.storyboard */,
 				DCBC274628649A4B0000E699 /* CharacterVC.swift */,
 				DCBC27482864BF220000E699 /* CharacterVM.swift */,
@@ -276,6 +293,7 @@
 				DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */,
 				DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */,
 				DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */,
+				DC3F1CB32871F78500CDF2EC /* CharacterDetailVC.storyboard in Resources */,
 				DCBF9D552869EF1600D124F4 /* CharacterCollectionViewCell.xib in Resources */,
 				DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */,
 				DC5608E128645B270066F3AA /* CustomCell.xib in Resources */,
@@ -299,8 +317,10 @@
 				DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */,
 				DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */,
 				DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */,
+				DC3F1CB92871FA6900CDF2EC /* CharacterDetailVM.swift in Sources */,
 				DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */,
 				DC71D3AD2865105D00E5E234 /* Character.swift in Sources */,
+				DC3F1CB72871F7FD00CDF2EC /* CharacterDetailVC.swift in Sources */,
 				DC5608F0286462920066F3AA /* Router.swift in Sources */,
 				DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */,
 				DC71D3AB286504CD00E5E234 /* MapsVM.swift in Sources */,

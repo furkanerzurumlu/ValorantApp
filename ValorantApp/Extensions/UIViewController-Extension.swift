@@ -12,7 +12,7 @@ public enum StoryboardNames: String {
     case character = "CharacterVC"
     case weapons = "WeaponsVC"
     case maps = "MapsVC"
-    
+    case characterDetail = "CharacterDetailVC"
     
 }
 

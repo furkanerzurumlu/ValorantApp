@@ -29,4 +29,8 @@ final class Router {
         navigationController?.pushViewController(mapsVC, animated: true)
     }
     
+    func showCharacterDetailVC(navigationController: UINavigationController?){
+        let detailVC = CharacterDetailVC.instantiate(storyboard: .characterDetail)
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }

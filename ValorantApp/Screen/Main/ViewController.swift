@@ -47,7 +47,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let fetchData = statusName[indexPath.row]
+        
         if indexPath.row == 0 {
             Router.shared.showCharacterVC(navigationController: self.navigationController)
         }
