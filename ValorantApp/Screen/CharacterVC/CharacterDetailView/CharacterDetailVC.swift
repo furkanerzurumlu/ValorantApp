@@ -8,14 +8,22 @@
 import UIKit
 
 class CharacterDetailVC: UIViewController {
-
+    
+    @IBOutlet weak var characterDetailImageView: UIImageView!
+    @IBOutlet weak var characterDisplayName: UILabel!
+    @IBOutlet weak var characterDescription: UILabel!
+    @IBOutlet weak var characterRole: UILabel!
+    @IBOutlet weak var characterRoleDescription: UILabel!
+    
+    var viewModel: CharacterDetailVM?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //characterDisplayName.text = viewModel?.data.
     }
     
-
    
 
 }
+

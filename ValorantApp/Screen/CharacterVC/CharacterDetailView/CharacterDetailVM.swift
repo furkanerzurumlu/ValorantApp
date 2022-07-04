@@ -17,8 +17,9 @@ protocol CharacterDetailVMDelegate: CharacterDetailVMProtocol{
     
 }
 
-class CharacterDetailVM: CharacterVMDelegate{
-    var delegate: CharacterVMDelegateOutputs?
+
+class CharacterDetailVM: CharacterDetailVMDelegate{
+    
     
     var data: [Datum] = []
     var network: charecterNetworking = charecterNetworking()
