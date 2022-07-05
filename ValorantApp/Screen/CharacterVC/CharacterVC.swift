@@ -46,7 +46,10 @@ extension CharacterVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        Router.shared.showCharacterDetailVC(navigationController: self.navigationController)
+        if let data = viewModel?.data[indexPath.row] {
+            Router.shared.showCharacterDetailVC(navigationController: self.navigationController, data:data)
+        }
+        
     }
     
 }
