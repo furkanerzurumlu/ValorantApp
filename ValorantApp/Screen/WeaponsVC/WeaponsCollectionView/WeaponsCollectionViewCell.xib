@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,32 +17,56 @@
                 <rect key="frame" x="0.0" y="0.0" width="383" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fsb-uI-366">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hix-TU-unN">
                         <rect key="frame" x="0.0" y="0.0" width="383" height="200"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ikT-ul-IdM">
-                                <rect key="frame" x="0.0" y="0.0" width="383" height="155"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="155" id="QYf-jX-zeI"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOQ-8t-grb">
-                                <rect key="frame" x="0.0" y="155" width="383" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="UFO-8z-5hp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fsb-uI-366">
+                                <rect key="frame" x="0.0" y="0.0" width="383" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-valorant-100" translatesAutoresizingMaskIntoConstraints="NO" id="ikT-ul-IdM">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="155"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="155" id="QYf-jX-zeI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOQ-8t-grb">
+                                        <rect key="frame" x="0.0" y="155" width="383" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="UFO-8z-5hp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43971527069999999" green="0.1385616881" blue="0.044451855249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.43971527069999999" green="0.1385616881" blue="0.044451855249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </stackView>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fsb-uI-366" firstAttribute="leading" secondItem="hix-TU-unN" secondAttribute="leading" id="Ye3-uB-6mX"/>
+                            <constraint firstAttribute="trailing" secondItem="Fsb-uI-366" secondAttribute="trailing" id="bpc-QU-DPh"/>
+                            <constraint firstAttribute="bottom" secondItem="Fsb-uI-366" secondAttribute="bottom" id="std-4R-O4Q"/>
+                            <constraint firstItem="Fsb-uI-366" firstAttribute="top" secondItem="hix-TU-unN" secondAttribute="top" id="uKm-jI-cLR"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hix-TU-unN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2PF-iY-gg7"/>
+                <constraint firstAttribute="trailing" secondItem="hix-TU-unN" secondAttribute="trailing" id="CTM-6m-rhR"/>
+                <constraint firstItem="hix-TU-unN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="U6R-gT-qps"/>
+                <constraint firstAttribute="bottom" secondItem="hix-TU-unN" secondAttribute="bottom" id="gIm-gk-K8e"/>
+            </constraints>
             <size key="customSize" width="383" height="127"/>
             <point key="canvasLocation" x="478.98550724637687" y="79.017857142857139"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="icons8-valorant-100" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
