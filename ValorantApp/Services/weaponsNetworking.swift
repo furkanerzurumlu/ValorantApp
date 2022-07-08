@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 class weaponsNetworking {
+    
     static let upComingWeapons = "https://valorant-api.com/v1/weapons"
     
     func getUpComingWeapons(completion: @escaping (Weapons?)->()){

@@ -21,6 +21,8 @@ final class Router {
     
     func showWeaponsVC(navigationController: UINavigationController?){
         let weaponsVC = WeaponsVC.instantiate(storyboard: .weapons)
+        let weaponsVM = WeaponsVM()
+        weaponsVC.viewModel = weaponsVM
         navigationController?.pushViewController(weaponsVC, animated: true)
     }
     

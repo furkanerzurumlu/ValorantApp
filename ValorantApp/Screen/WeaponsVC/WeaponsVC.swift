@@ -9,21 +9,45 @@ import UIKit
 
 class WeaponsVC: UIViewController {
 
+    @IBOutlet weak var weaponsCollectionView: UICollectionView!
+    
+    var viewModel: WeaponsVM?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        viewModel?.delegate = self
+        viewModel?.getUpcomingData()
+        
+        weaponsCollectionView.delegate = self
+        weaponsCollectionView.dataSource = self
+        
+        
+        let nibCell = UINib(nibName: "WeaponsCollectionViewCell", bundle: nil)
+        weaponsCollectionView.register(nibCell, forCellWithReuseIdentifier: "weaponsCell")
+        
     }
     
 
-    /*
-    // MARK: - Navigation
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+extension WeaponsVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel?.data.count ?? 0
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = weaponsCollectionView.dequeueReusableCell(withReuseIdentifier: "weaponsCell", for: indexPath) as! WeaponsCollectionViewCell
+        
+        return cell
+    }
+}
 
+extension WeaponsVC: WeaponsVMDelegateOutputs{
+    func reloadCollectionView() {
+        self.weaponsCollectionView.reloadData()
+    }
 }

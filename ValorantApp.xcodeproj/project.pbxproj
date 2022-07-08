@@ -12,6 +12,8 @@
 		DC3F1CB92871FA6900CDF2EC /* CharacterDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */; };
 		DC45010D2878BC1C0062363E /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45010C2878BC1C0062363E /* Weapons.swift */; };
 		DC45010F2878BD3E0062363E /* weaponsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45010E2878BD3E0062363E /* weaponsNetworking.swift */; };
+		DC4501132878CB510062363E /* WeaponsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4501112878CB510062363E /* WeaponsCollectionViewCell.swift */; };
+		DC4501142878CB510062363E /* WeaponsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4501122878CB510062363E /* WeaponsCollectionViewCell.xib */; };
 		DC4CDC1428777D8500AD758D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DC4CDC1328777D8500AD758D /* Kingfisher */; };
 		DC5608E128645B270066F3AA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5608E028645B270066F3AA /* CustomCell.xib */; };
 		DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608E728645E5A0066F3AA /* CustomCell.swift */; };
@@ -45,6 +47,8 @@
 		DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVM.swift; sourceTree = "<group>"; };
 		DC45010C2878BC1C0062363E /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
 		DC45010E2878BD3E0062363E /* weaponsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponsNetworking.swift; sourceTree = "<group>"; };
+		DC4501112878CB510062363E /* WeaponsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC4501122878CB510062363E /* WeaponsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeaponsCollectionViewCell.xib; sourceTree = "<group>"; };
 		DC5608E028645B270066F3AA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		DC5608E728645E5A0066F3AA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
@@ -102,6 +106,15 @@
 				DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */,
 			);
 			path = CharacterDetailView;
+			sourceTree = "<group>";
+		};
+		DC4501102878CB190062363E /* WeaponsCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DC4501112878CB510062363E /* WeaponsCollectionViewCell.swift */,
+				DC4501122878CB510062363E /* WeaponsCollectionViewCell.xib */,
+			);
+			path = WeaponsCollectionView;
 			sourceTree = "<group>";
 		};
 		DC5608E228645B580066F3AA /* CustomCell */ = {
@@ -204,6 +217,7 @@
 		DC71D39A286503E100E5E234 /* WeaponsVC */ = {
 			isa = PBXGroup;
 			children = (
+				DC4501102878CB190062363E /* WeaponsCollectionView */,
 				DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */,
 				DC71D39F2865043300E5E234 /* WeaponsVC.swift */,
 				DC71D3A12865045C00E5E234 /* WeaponsVM.swift */,
@@ -299,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4501142878CB510062363E /* WeaponsCollectionViewCell.xib in Resources */,
 				DC71D3A7286504AB00E5E234 /* MapsVC.storyboard in Resources */,
 				DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */,
 				DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */,
@@ -328,6 +343,7 @@
 				DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */,
 				DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */,
 				DC3F1CB92871FA6900CDF2EC /* CharacterDetailVM.swift in Sources */,
+				DC4501132878CB510062363E /* WeaponsCollectionViewCell.swift in Sources */,
 				DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */,
 				DC71D3AD2865105D00E5E234 /* Character.swift in Sources */,
 				DC45010F2878BD3E0062363E /* weaponsNetworking.swift in Sources */,
