@@ -10,6 +10,9 @@
 		DC3F1CB32871F78500CDF2EC /* CharacterDetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3F1CB22871F78500CDF2EC /* CharacterDetailVC.storyboard */; };
 		DC3F1CB72871F7FD00CDF2EC /* CharacterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F1CB62871F7FD00CDF2EC /* CharacterDetailVC.swift */; };
 		DC3F1CB92871FA6900CDF2EC /* CharacterDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */; };
+		DC45010D2878BC1C0062363E /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45010C2878BC1C0062363E /* Weapons.swift */; };
+		DC45010F2878BD3E0062363E /* weaponsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45010E2878BD3E0062363E /* weaponsNetworking.swift */; };
+		DC4CDC1428777D8500AD758D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DC4CDC1328777D8500AD758D /* Kingfisher */; };
 		DC5608E128645B270066F3AA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5608E028645B270066F3AA /* CustomCell.xib */; };
 		DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608E728645E5A0066F3AA /* CustomCell.swift */; };
 		DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */; };
@@ -40,6 +43,8 @@
 		DC3F1CB22871F78500CDF2EC /* CharacterDetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetailVC.storyboard; sourceTree = "<group>"; };
 		DC3F1CB62871F7FD00CDF2EC /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVC.swift; sourceTree = "<group>"; };
 		DC3F1CB82871FA6900CDF2EC /* CharacterDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVM.swift; sourceTree = "<group>"; };
+		DC45010C2878BC1C0062363E /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
+		DC45010E2878BD3E0062363E /* weaponsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponsNetworking.swift; sourceTree = "<group>"; };
 		DC5608E028645B270066F3AA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		DC5608E728645E5A0066F3AA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
@@ -72,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4CDC1428777D8500AD758D /* Kingfisher in Frameworks */,
 				DC71D3B0286511C800E5E234 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,8 +118,8 @@
 			children = (
 				DC5608E428645B740066F3AA /* Main */,
 				DCBC274328649A150000E699 /* CharacterVC */,
-				DC71D3A52865048200E5E234 /* MapsVC */,
 				DC71D39A286503E100E5E234 /* WeaponsVC */,
+				DC71D3A52865048200E5E234 /* MapsVC */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DC71D3AC2865105D00E5E234 /* Character.swift */,
+				DC45010C2878BC1C0062363E /* Weapons.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				DCEAF3852865127700EEBCC0 /* characterNetworking.swift */,
+				DC45010E2878BD3E0062363E /* weaponsNetworking.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 			name = ValorantApp;
 			packageProductDependencies = (
 				DC71D3AF286511C800E5E234 /* Alamofire */,
+				DC4CDC1328777D8500AD758D /* Kingfisher */,
 			);
 			productName = ValorantApp;
 			productReference = DC562FBB2863D6EF00EE4B99 /* ValorantApp.app */;
@@ -274,6 +283,7 @@
 			mainGroup = DC562FB22863D6EF00EE4B99;
 			packageReferences = (
 				DC71D3AE286511C800E5E234 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DC4CDC1228777D8500AD758D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = DC562FBC2863D6EF00EE4B99 /* Products */;
 			projectDirPath = "";
@@ -320,9 +330,11 @@
 				DC3F1CB92871FA6900CDF2EC /* CharacterDetailVM.swift in Sources */,
 				DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */,
 				DC71D3AD2865105D00E5E234 /* Character.swift in Sources */,
+				DC45010F2878BD3E0062363E /* weaponsNetworking.swift in Sources */,
 				DC3F1CB72871F7FD00CDF2EC /* CharacterDetailVC.swift in Sources */,
 				DC5608F0286462920066F3AA /* Router.swift in Sources */,
 				DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */,
+				DC45010D2878BC1C0062363E /* Weapons.swift in Sources */,
 				DC71D3AB286504CD00E5E234 /* MapsVM.swift in Sources */,
 				DC562FC12863D6EF00EE4B99 /* SceneDelegate.swift in Sources */,
 			);
@@ -544,6 +556,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC4CDC1228777D8500AD758D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		DC71D3AE286511C800E5E234 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -555,6 +575,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC4CDC1328777D8500AD758D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC4CDC1228777D8500AD758D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		DC71D3AF286511C800E5E234 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DC71D3AE286511C800E5E234 /* XCRemoteSwiftPackageReference "Alamofire" */;

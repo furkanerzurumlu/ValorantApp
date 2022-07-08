@@ -7,8 +7,17 @@
 
 import UIKit
 import SwiftUI
+import Kingfisher
 
 class CharacterDetailVC: UIViewController {
+    
+    @IBOutlet weak var slotView: UIView!
+    @IBOutlet weak var slot1: UIView!
+    @IBOutlet weak var slot2: UIView!
+    @IBOutlet weak var slot3: UIView!
+    @IBOutlet weak var slot4: UIView!
+    
+    @IBOutlet weak var characterImageView: UIImageView!
     
     @IBOutlet weak var characterDetailImageView: UIImageView!
     @IBOutlet weak var characterDisplayName: UILabel!
@@ -49,7 +58,11 @@ class CharacterDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
+        slot1.layer.cornerRadius = 10
+        slot2.layer.cornerRadius = 10
+        slot3.layer.cornerRadius = 10
+        slot4.layer.cornerRadius = 10
+        characterImageView.layer.cornerRadius = 30
         
         characterDetailImageView.downloadedImage(from: data?.fullPortraitV2 ?? "")
         characterDisplayName.text = data?.displayName
@@ -106,11 +119,3 @@ extension UIImageView {
     }
 }
 
-extension UIStackView {
-    func addBackground(color: UIColor) {
-        let subView = UIView(frame: bounds)
-        subView.backgroundColor = color
-        subView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        insertSubview(subView, at: 0)
-    }
-}
