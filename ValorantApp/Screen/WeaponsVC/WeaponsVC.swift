@@ -41,6 +41,9 @@ extension WeaponsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = weaponsCollectionView.dequeueReusableCell(withReuseIdentifier: "weaponsCell", for: indexPath) as! WeaponsCollectionViewCell
+        cell.weaponsNameLabel.text = viewModel?.data[indexPath.row].displayName
+        
+        cell.weaponsImageView.downloaded(from: viewModel?.data[indexPath.row].displayIcon ?? "")
         
         return cell
     }
