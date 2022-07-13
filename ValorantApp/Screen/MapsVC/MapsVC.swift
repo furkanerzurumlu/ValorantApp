@@ -9,21 +9,38 @@ import UIKit
 
 class MapsVC: UIViewController {
 
+    @IBOutlet weak var mapCollectionView: UICollectionView!
+    
+    var viewModel: MapsVM?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mapCollectionView.register(MapCollectionViewCell.nibName, forCellWithReuseIdentifier: MapCollectionViewCell.identifier)
+        mapCollectionView.delegate = self
+        mapCollectionView.dataSource = self
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+
+
+extension MapsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout  {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var height = view.layer.frame.height
+        var width = view.layer.frame.width
+        return CGSize(width: CGFloat(width), height: CGFloat(height))
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = mapCollectionView.dequeueReusableCell(withReuseIdentifier: MapCollectionViewCell.identifier, for: indexPath) as! MapCollectionViewCell
+        cell.backgroundColor = .blue
+        return cell
     }
-    */
-
+    
+    
 }

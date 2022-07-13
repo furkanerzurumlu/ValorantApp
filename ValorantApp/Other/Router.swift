@@ -28,6 +28,8 @@ final class Router {
     
     func showMapsVC(navigationController: UINavigationController?){
         let mapsVC = MapsVC.instantiate(storyboard: .maps)
+        let mapsVM = MapsVM()
+        mapsVC.viewModel = mapsVM
         navigationController?.pushViewController(mapsVC, animated: true)
     }
     
@@ -35,7 +37,6 @@ final class Router {
         let detailVC = CharacterDetailVC.instantiate(storyboard: .characterDetail)
         let characterDetailVM = CharacterDetailVM()
         detailVC.data = data
-        
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }

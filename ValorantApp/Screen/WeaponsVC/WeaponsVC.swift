@@ -27,9 +27,6 @@ class WeaponsVC: UIViewController {
         weaponsCollectionView.register(nibCell, forCellWithReuseIdentifier: "weaponsCell")
         
     }
-    
-
-    
 
 }
 
