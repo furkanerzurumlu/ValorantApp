@@ -9,6 +9,8 @@ import UIKit
 
 class MapCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var mapIcon: UIImageView!
+    @IBOutlet weak var mapIconName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

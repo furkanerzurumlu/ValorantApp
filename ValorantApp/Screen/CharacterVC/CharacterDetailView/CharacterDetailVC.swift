@@ -19,6 +19,7 @@ class CharacterDetailVC: UIViewController {
     
     @IBOutlet weak var characterImageView: UIImageView!
     
+    @IBOutlet weak var abilitiesLabel: UILabel!
     @IBOutlet weak var characterDetailImageView: UIImageView!
     @IBOutlet weak var characterDisplayName: UILabel!
     @IBOutlet weak var characterDescription: UILabel!
@@ -57,12 +58,11 @@ class CharacterDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setCorner()
        
-        slot1.layer.cornerRadius = 10
-        slot2.layer.cornerRadius = 10
-        slot3.layer.cornerRadius = 10
-        slot4.layer.cornerRadius = 10
-        characterImageView.layer.cornerRadius = 30
+        
+        
         
         characterDetailImageView.downloadedImage(from: data?.fullPortraitV2 ?? "")
         characterDisplayName.text = data?.displayName
@@ -96,6 +96,23 @@ class CharacterDetailVC: UIViewController {
         abilitiesDiscription4.text = data?.abilities[3].abilityDescription
         
         }
+    
+    func setCorner(){
+        slot1.layer.cornerRadius = 10
+        slot2.layer.cornerRadius = 10
+        slot3.layer.cornerRadius = 10
+        slot4.layer.cornerRadius = 10
+        characterImageView.layer.cornerRadius = 30
+        
+        characterDisplayName.layer.cornerRadius = 10
+        characterDisplayName.layer.masksToBounds = true
+        
+        characterRole.layer.cornerRadius = 10
+        characterRole.layer.masksToBounds = true
+        
+        abilitiesLabel.layer.cornerRadius = 10
+        abilitiesLabel.layer.masksToBounds = true
+    }
 }
 
 extension UIImageView {

@@ -15,19 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character" translatesAutoresizingMaskIntoConstraints="NO" id="dO7-uf-Kw6">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="10t-18-4AM"/>
-                                    <constraint firstAttribute="height" constant="200" id="ztL-7X-egO"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALORANT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML7-ai-4g2">
+                                <rect key="frame" x="99" y="423.5" width="216" height="49"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-zZ-YdR">
+                                <rect key="frame" x="149" y="845.5" width="116" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.8392156959" green="0.27450981740000002" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="dO7-uf-Kw6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="r3g-Va-NJh"/>
-                            <constraint firstItem="dO7-uf-Kw6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="y8o-EM-Qzb"/>
+                            <constraint firstItem="1xe-zZ-YdR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2o5-cR-q3c"/>
+                            <constraint firstItem="ML7-ai-4g2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Cms-DT-6Or"/>
+                            <constraint firstItem="ML7-ai-4g2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OHk-Xo-6ep"/>
+                            <constraint firstAttribute="bottom" secondItem="1xe-zZ-YdR" secondAttribute="bottom" constant="25" id="euv-jy-miu"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,7 +43,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="character" width="512" height="512"/>
-    </resources>
 </document>

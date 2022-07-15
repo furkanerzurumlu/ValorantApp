@@ -26,7 +26,7 @@
                                             <constraint firstAttribute="height" constant="470" id="fZh-Sq-ewf"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SON-eK-EdN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SON-eK-EdN">
                                         <rect key="frame" x="20" y="535" width="364" height="50.5"/>
                                         <color key="backgroundColor" red="0.43971527069999999" green="0.1385616881" blue="0.044451855249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
@@ -42,7 +42,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBx-bZ-S1W">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBx-bZ-S1W">
                                         <rect key="frame" x="20" y="925.5" width="364" height="50.5"/>
                                         <color key="backgroundColor" red="0.43971527069999999" green="0.1385616881" blue="0.044451855249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
@@ -58,7 +58,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zer-mB-BJs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zer-mB-BJs">
                                         <rect key="frame" x="20" y="1179" width="364" height="50"/>
                                         <color key="backgroundColor" red="0.43971527069999999" green="0.1385616881" blue="0.044451855249999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
@@ -337,6 +337,7 @@
                         <outlet property="abilitiesDisplayName2" destination="orm-wU-uoN" id="yV3-OS-ZrD"/>
                         <outlet property="abilitiesDisplayName3" destination="0ko-sX-BwH" id="Ha1-Jq-dUg"/>
                         <outlet property="abilitiesDisplayName4" destination="GvG-hE-tA8" id="Wht-ZI-csW"/>
+                        <outlet property="abilitiesLabel" destination="zer-mB-BJs" id="W4A-ER-VIA"/>
                         <outlet property="abilitiesSlot" destination="hvU-Eq-mSh" id="a3x-VU-TJC"/>
                         <outlet property="abilitiesSlot2" destination="gMo-zF-eUh" id="zFB-c9-f02"/>
                         <outlet property="abilitiesSlot3" destination="Psp-VK-1RU" id="43Z-dg-6jZ"/>

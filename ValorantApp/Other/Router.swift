@@ -39,4 +39,9 @@ final class Router {
         detailVC.data = data
         navigationController?.pushViewController(detailVC, animated: true)
     }
+    
+    func showDeveloperPageVC(navigationController: UINavigationController?){
+        let developerVC = Developer.instantiate(storyboard: .developer)
+        navigationController?.pushViewController(developerVC, animated: true)
+    }
 }

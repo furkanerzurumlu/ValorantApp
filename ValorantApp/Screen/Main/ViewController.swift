@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     let statusName = ["Agents","Weapons","Maps"]
-    let imageName = ["character","weapons","map" ]
+    let imageName = ["icon1","icon1","icon1" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +24,16 @@ class ViewController: UIViewController {
         mainTableView.dataSource = self
         
         mainTableView.separatorStyle = .none
+        
+       
+        //navigationController?.navigationBar.topItem?.title = "VALORANT"
+        //navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica Neue", size: 40)!]
+        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.bookmarks , target: self, action: #selector(developerAbout))
+        navigationController?.navigationBar.tintColor = UIColor.black
     }
-    
+    @objc func developerAbout(){
+        Router.shared.showDeveloperPageVC(navigationController: self.navigationController)
+    }
     
 }
 
