@@ -27,6 +27,8 @@
 		DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC562FC92863D6EF00EE4B99 /* LaunchScreen.storyboard */; };
 		DC5AA60C2881AE040087EFCD /* DeveloperVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5AA60B2881AE040087EFCD /* DeveloperVC.storyboard */; };
 		DC5AA60E2881AE190087EFCD /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA60D2881AE190087EFCD /* Developer.swift */; };
+		DC5AA61028836B780087EFCD /* WeaponsSkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA60F28836B780087EFCD /* WeaponsSkins.swift */; };
+		DC5AA61228836CA70087EFCD /* weaponsSkinsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA61128836CA70087EFCD /* weaponsSkinsNetworking.swift */; };
 		DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */; };
 		DC71D3A02865043300E5E234 /* WeaponsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D39F2865043300E5E234 /* WeaponsVC.swift */; };
 		DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A12865045C00E5E234 /* WeaponsVM.swift */; };
@@ -69,6 +71,8 @@
 		DC562FCC2863D6EF00EE4B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC5AA60B2881AE040087EFCD /* DeveloperVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeveloperVC.storyboard; sourceTree = "<group>"; };
 		DC5AA60D2881AE190087EFCD /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		DC5AA60F28836B780087EFCD /* WeaponsSkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsSkins.swift; sourceTree = "<group>"; };
+		DC5AA61128836CA70087EFCD /* weaponsSkinsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponsSkinsNetworking.swift; sourceTree = "<group>"; };
 		DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeaponsVC.storyboard; sourceTree = "<group>"; };
 		DC71D39F2865043300E5E234 /* WeaponsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVC.swift; sourceTree = "<group>"; };
 		DC71D3A12865045C00E5E234 /* WeaponsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVM.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 				DC71D3AC2865105D00E5E234 /* Character.swift */,
 				DC45010C2878BC1C0062363E /* Weapons.swift */,
 				DCD30B98287DD1390068B7D6 /* Maps.swift */,
+				DC5AA60F28836B780087EFCD /* WeaponsSkins.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				DCEAF3852865127700EEBCC0 /* characterNetworking.swift */,
 				DC45010E2878BD3E0062363E /* weaponsNetworking.swift */,
 				DCD30B96287DD05E0068B7D6 /* mapsNetworking.swift */,
+				DC5AA61128836CA70087EFCD /* weaponsSkinsNetworking.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5AA60E2881AE190087EFCD /* Developer.swift in Sources */,
+				DC5AA61028836B780087EFCD /* WeaponsSkins.swift in Sources */,
 				DCBF9D542869EF1600D124F4 /* CharacterCollectionViewCell.swift in Sources */,
 				DC562FC32863D6EF00EE4B99 /* ViewController.swift in Sources */,
 				DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */,
@@ -392,6 +399,7 @@
 				DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */,
 				DC45010D2878BC1C0062363E /* Weapons.swift in Sources */,
 				DC71D3AB286504CD00E5E234 /* MapsVM.swift in Sources */,
+				DC5AA61228836CA70087EFCD /* weaponsSkinsNetworking.swift in Sources */,
 				DC562FC12863D6EF00EE4B99 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
