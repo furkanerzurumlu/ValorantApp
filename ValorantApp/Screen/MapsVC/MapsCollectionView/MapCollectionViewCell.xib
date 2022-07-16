@@ -4,32 +4,42 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapCollectionViewCell" id="gTV-IL-0wX" customClass="MapCollectionViewCell" customModule="ValorantApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m20-ra-9WX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character" translatesAutoresizingMaskIntoConstraints="NO" id="rJ3-aH-cuI">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cs-NX-7bX">
+                                <rect key="frame" x="0.0" y="150" width="414" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8392156959" green="0.27450981740000002" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rJ3-aH-cuI" secondAttribute="bottom" id="2OI-ci-z6S"/>
+                            <constraint firstItem="2Cs-NX-7bX" firstAttribute="leading" secondItem="m20-ra-9WX" secondAttribute="leading" id="6Jt-eE-dqH"/>
                             <constraint firstAttribute="width" constant="414" id="8ZT-IM-x61"/>
                             <constraint firstItem="rJ3-aH-cuI" firstAttribute="leading" secondItem="m20-ra-9WX" secondAttribute="leading" id="D91-vi-0fN"/>
+                            <constraint firstAttribute="trailing" secondItem="2Cs-NX-7bX" secondAttribute="trailing" id="OC5-t6-gMZ"/>
                             <constraint firstAttribute="trailing" secondItem="rJ3-aH-cuI" secondAttribute="trailing" id="ZpJ-A5-14w"/>
                             <constraint firstItem="rJ3-aH-cuI" firstAttribute="top" secondItem="m20-ra-9WX" secondAttribute="top" id="p5V-tf-Coh"/>
+                            <constraint firstItem="2Cs-NX-7bX" firstAttribute="top" secondItem="m20-ra-9WX" secondAttribute="top" constant="150" id="wtJ-eB-voP"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -44,11 +54,15 @@
             <size key="customSize" width="50" height="182"/>
             <connections>
                 <outlet property="mapIcon" destination="rJ3-aH-cuI" id="1hU-Es-RpX"/>
+                <outlet property="mapNameLabel" destination="2Cs-NX-7bX" id="2ea-1E-dgK"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="47.544642857142854"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="character" width="512" height="512"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
