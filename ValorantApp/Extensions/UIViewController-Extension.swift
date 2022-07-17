@@ -14,6 +14,7 @@ public enum StoryboardNames: String {
     case maps = "MapsVC"
     case characterDetail = "CharacterDetailVC"
     case developer = "DeveloperVC"
+    case weaponsSkins = "WeaponsSkinsVC"
 }
 
 protocol StoryboardSettings {

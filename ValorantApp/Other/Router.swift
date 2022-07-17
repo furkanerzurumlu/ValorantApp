@@ -26,6 +26,13 @@ final class Router {
         navigationController?.pushViewController(weaponsVC, animated: true)
     }
     
+    func showWeaponsSkinsVC(navigationController: UINavigationController?){
+        let weaponsSkinsVC = WeaponsSkinsVC.instantiate(storyboard: .weaponsSkins)
+        
+        
+        navigationController?.pushViewController(weaponsSkinsVC, animated: true)
+    }
+    
     func showMapsVC(navigationController: UINavigationController?){
         let mapsVC = MapsVC.instantiate(storyboard: .maps)
         let mapsVM = MapsVM()

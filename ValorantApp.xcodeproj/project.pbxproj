@@ -29,6 +29,12 @@
 		DC5AA60E2881AE190087EFCD /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA60D2881AE190087EFCD /* Developer.swift */; };
 		DC5AA61028836B780087EFCD /* WeaponsSkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA60F28836B780087EFCD /* WeaponsSkins.swift */; };
 		DC5AA61228836CA70087EFCD /* weaponsSkinsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA61128836CA70087EFCD /* weaponsSkinsNetworking.swift */; };
+		DC5AA61428836F200087EFCD /* UIImageView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA61328836F200087EFCD /* UIImageView Extension.swift */; };
+		DC5AA623288431F90087EFCD /* WeaponsSkinsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA622288431F90087EFCD /* WeaponsSkinsVC.swift */; };
+		DC5AA6252884323E0087EFCD /* WeaponsSkinsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5AA6242884323E0087EFCD /* WeaponsSkinsVC.storyboard */; };
+		DC5AA627288432900087EFCD /* WeaponsSkinsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA626288432900087EFCD /* WeaponsSkinsVM.swift */; };
+		DC5AA62B28843F660087EFCD /* WeaponsSkinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA62928843F660087EFCD /* WeaponsSkinsCollectionViewCell.swift */; };
+		DC5AA62C28843F660087EFCD /* WeaponsSkinsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5AA62A28843F660087EFCD /* WeaponsSkinsCollectionViewCell.xib */; };
 		DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */; };
 		DC71D3A02865043300E5E234 /* WeaponsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D39F2865043300E5E234 /* WeaponsVC.swift */; };
 		DC71D3A22865045C00E5E234 /* WeaponsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71D3A12865045C00E5E234 /* WeaponsVM.swift */; };
@@ -73,6 +79,12 @@
 		DC5AA60D2881AE190087EFCD /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 		DC5AA60F28836B780087EFCD /* WeaponsSkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsSkins.swift; sourceTree = "<group>"; };
 		DC5AA61128836CA70087EFCD /* weaponsSkinsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weaponsSkinsNetworking.swift; sourceTree = "<group>"; };
+		DC5AA61328836F200087EFCD /* UIImageView Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView Extension.swift"; sourceTree = "<group>"; };
+		DC5AA622288431F90087EFCD /* WeaponsSkinsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsSkinsVC.swift; sourceTree = "<group>"; };
+		DC5AA6242884323E0087EFCD /* WeaponsSkinsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeaponsSkinsVC.storyboard; sourceTree = "<group>"; };
+		DC5AA626288432900087EFCD /* WeaponsSkinsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsSkinsVM.swift; sourceTree = "<group>"; };
+		DC5AA62928843F660087EFCD /* WeaponsSkinsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsSkinsCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC5AA62A28843F660087EFCD /* WeaponsSkinsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeaponsSkinsCollectionViewCell.xib; sourceTree = "<group>"; };
 		DC71D39D2865041600E5E234 /* WeaponsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeaponsVC.storyboard; sourceTree = "<group>"; };
 		DC71D39F2865043300E5E234 /* WeaponsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVC.swift; sourceTree = "<group>"; };
 		DC71D3A12865045C00E5E234 /* WeaponsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsVM.swift; sourceTree = "<group>"; };
@@ -148,6 +160,7 @@
 				DC5608E428645B740066F3AA /* Main */,
 				DCBC274328649A150000E699 /* CharacterVC */,
 				DC71D39A286503E100E5E234 /* WeaponsVC */,
+				DC5AA61528836F9E0087EFCD /* WeaoponsSkinsVC */,
 				DC71D3A52865048200E5E234 /* MapsVC */,
 				DC5AA6082881AD8B0087EFCD /* DeveloperVC */,
 			);
@@ -168,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				DC5608EA2864606C0066F3AA /* UIViewController-Extension.swift */,
+				DC5AA61328836F200087EFCD /* UIImageView Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,6 +256,26 @@
 				DC5AA60D2881AE190087EFCD /* Developer.swift */,
 			);
 			path = DeveloperVC;
+			sourceTree = "<group>";
+		};
+		DC5AA61528836F9E0087EFCD /* WeaoponsSkinsVC */ = {
+			isa = PBXGroup;
+			children = (
+				DC5AA62828843EE10087EFCD /* WeaponsSkinsCollectionView */,
+				DC5AA622288431F90087EFCD /* WeaponsSkinsVC.swift */,
+				DC5AA6242884323E0087EFCD /* WeaponsSkinsVC.storyboard */,
+				DC5AA626288432900087EFCD /* WeaponsSkinsVM.swift */,
+			);
+			path = WeaoponsSkinsVC;
+			sourceTree = "<group>";
+		};
+		DC5AA62828843EE10087EFCD /* WeaponsSkinsCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DC5AA62928843F660087EFCD /* WeaponsSkinsCollectionViewCell.swift */,
+				DC5AA62A28843F660087EFCD /* WeaponsSkinsCollectionViewCell.xib */,
+			);
+			path = WeaponsSkinsCollectionView;
 			sourceTree = "<group>";
 		};
 		DC71D39A286503E100E5E234 /* WeaponsVC */ = {
@@ -358,6 +392,7 @@
 				DC562FCB2863D6EF00EE4B99 /* LaunchScreen.storyboard in Resources */,
 				DCBC274528649A320000E699 /* CharacterVC.storyboard in Resources */,
 				DCD30B9E287F0FD50068B7D6 /* MapCollectionViewCell.xib in Resources */,
+				DC5AA62C28843F660087EFCD /* WeaponsSkinsCollectionViewCell.xib in Resources */,
 				DC71D39E2865041600E5E234 /* WeaponsVC.storyboard in Resources */,
 				DC3F1CB32871F78500CDF2EC /* CharacterDetailVC.storyboard in Resources */,
 				DCBF9D552869EF1600D124F4 /* CharacterCollectionViewCell.xib in Resources */,
@@ -365,6 +400,7 @@
 				DC562FC82863D6EF00EE4B99 /* Assets.xcassets in Resources */,
 				DC5608E128645B270066F3AA /* CustomCell.xib in Resources */,
 				DC562FC62863D6EF00EE4B99 /* Main.storyboard in Resources */,
+				DC5AA6252884323E0087EFCD /* WeaponsSkinsVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,17 +420,21 @@
 				DCEAF3862865127700EEBCC0 /* characterNetworking.swift in Sources */,
 				DC562FBF2863D6EF00EE4B99 /* AppDelegate.swift in Sources */,
 				DCD30B99287DD1390068B7D6 /* Maps.swift in Sources */,
+				DC5AA627288432900087EFCD /* WeaponsSkinsVM.swift in Sources */,
 				DCD30B97287DD05E0068B7D6 /* mapsNetworking.swift in Sources */,
 				DC5608E828645E5A0066F3AA /* CustomCell.swift in Sources */,
 				DC71D3A9286504C200E5E234 /* MapsVC.swift in Sources */,
 				DC5608EB2864606C0066F3AA /* UIViewController-Extension.swift in Sources */,
 				DC3F1CB92871FA6900CDF2EC /* CharacterDetailVM.swift in Sources */,
 				DC4501132878CB510062363E /* WeaponsCollectionViewCell.swift in Sources */,
+				DC5AA61428836F200087EFCD /* UIImageView Extension.swift in Sources */,
 				DCBC27492864BF220000E699 /* CharacterVM.swift in Sources */,
 				DCD30B9D287F0FD50068B7D6 /* MapCollectionViewCell.swift in Sources */,
 				DC71D3AD2865105D00E5E234 /* Character.swift in Sources */,
 				DC45010F2878BD3E0062363E /* weaponsNetworking.swift in Sources */,
+				DC5AA62B28843F660087EFCD /* WeaponsSkinsCollectionViewCell.swift in Sources */,
 				DC3F1CB72871F7FD00CDF2EC /* CharacterDetailVC.swift in Sources */,
+				DC5AA623288431F90087EFCD /* WeaponsSkinsVC.swift in Sources */,
 				DC5608F0286462920066F3AA /* Router.swift in Sources */,
 				DCBC274728649A4B0000E699 /* CharacterVC.swift in Sources */,
 				DC45010D2878BC1C0062363E /* Weapons.swift in Sources */,

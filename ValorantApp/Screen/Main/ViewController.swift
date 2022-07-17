@@ -11,8 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mainTableView: UITableView!
     
-    let statusName = ["Agents","Weapons","Maps"]
-    let imageName = ["icon1","icon1","icon1" ]
+    let statusName = ["Agents","Weapons","Weapons Skins","Maps"]
+    let imageName = ["icon1","icon1","icon1","icon1" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
         else if indexPath.row == 1 {
             Router.shared.showWeaponsVC(navigationController: self.navigationController)
+        }
+        else if indexPath.row == 2{
+            Router.shared.showWeaponsSkinsVC(navigationController: self.navigationController)
         }
         else {
             Router.shared.showMapsVC(navigationController: self.navigationController)
