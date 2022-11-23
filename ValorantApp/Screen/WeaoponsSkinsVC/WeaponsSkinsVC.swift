@@ -48,8 +48,6 @@ extension WeaponsSkinsVC: UICollectionViewDataSource, UICollectionViewDelegate, 
     
 }
     
-    
-    
 
 extension WeaponsSkinsVC: WeaponsSkinsVMDelegateOutputs{
     func reloadCollectionView() {

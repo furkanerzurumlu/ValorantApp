@@ -47,7 +47,7 @@ extension MapsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = mapCollectionView.dequeueReusableCell(withReuseIdentifier: MapCollectionViewCell.identifier, for: indexPath) as! MapCollectionViewCell
         
-        if let data = viewModel?.data[cellTextImageIndex] {
+        if let data = viewModel?.data[indexPath.row] {
             cell.setData(data: data)
 
         }
@@ -55,6 +55,9 @@ extension MapsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         //cell.mapIconName.text = viewModel?.data[indexPath.row].displayName
         return cell
     }
+    
+    
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         for cell in mapCollectionView.visibleCells {
           if let row = mapCollectionView.indexPath(for: cell)?.item {
@@ -65,15 +68,14 @@ extension MapsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        mapsPageController.numberOfPages = viewModel?.data.count ?? 0
-            mapsPageController.currentPage = indexPath.row
-        pageIndex = indexPath.row
+        
     }
     
 }
 
 extension MapsVC: MapsVMDelegateOutputs{
     func reloadCollectionView() {
+        mapsPageController.numberOfPages = viewModel?.data.count ?? 0
         self.mapCollectionView.reloadData()
     }
 }

@@ -56,18 +56,32 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             Router.shared.showCharacterVC(navigationController: self.navigationController)
-        }
-        else if indexPath.row == 1 {
+        case 1:
             Router.shared.showWeaponsVC(navigationController: self.navigationController)
-        }
-        else if indexPath.row == 2{
+        case 2:
             Router.shared.showWeaponsSkinsVC(navigationController: self.navigationController)
-        }
-        else {
+        case 3:
             Router.shared.showMapsVC(navigationController: self.navigationController)
+        
+        default:
+            break
         }
+        
+//        if indexPath.row == 0 {
+//            Router.shared.showCharacterVC(navigationController: self.navigationController)
+//        }
+//        else if indexPath.row == 1 {
+//            Router.shared.showWeaponsVC(navigationController: self.navigationController)
+//        }
+//        else if indexPath.row == 2{
+//            Router.shared.showWeaponsSkinsVC(navigationController: self.navigationController)
+//        }
+//        else {
+//            Router.shared.showMapsVC(navigationController: self.navigationController)
+//        }
     }
     
 }

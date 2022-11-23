@@ -16,10 +16,10 @@ class WeaponsCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        weaponsCellView.layer.cornerRadius = 10
-        weaponsCellView.clipsToBounds = true
-        weaponsCellView.layer.borderWidth = 3
-        weaponsCellView.layer.borderColor = UIColor.black.cgColor
+        //weaponsCellView.layer.cornerRadius = 10
+        //weaponsCellView.clipsToBounds = true
+        //weaponsCellView.layer.borderWidth = 3
+        //weaponsCellView.layer.borderColor = UIColor.black.cgColor
     }
 
 }
